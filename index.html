@@ -12,64 +12,59 @@
 </head>
 
 <body>
-  <!-- header-->
-  <header >
-    
-   <div class="row mx-auto">
-     <div class="container">
-      <nav class=" navbar pt-4 navbar-expand-md  col-sm-12  navbar-dark bg-transparent">
+  <!--navbar-->
+  <nav class=" navbar pt-4 navbar-expand-md  col-sm-12  navbar-dark bg-transparent fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand font-weight-bold" href="#index">DevFolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-          <a class="navbar-brand font-weight-bold" href="#index">DevFolio</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse text-uppercase  navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link ml-3" href="#header">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link  text-white ml-3" href="#about">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link  text-white ml-3" href="#services">services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link  text-white ml-3" href="#work">work</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link  text-white ml-3" href="#blog">blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link  text-white ml-3 " href="#contact">contact</a>
-              </li>
+      <div class="collapse text-uppercase  navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link ml-3" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-white ml-3" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-white ml-3" href="#services">services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-white ml-3" href="#work">work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-white ml-3" href="#blog">blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-white ml-3 " href="#contact">contact</a>
+          </li>
 
 
-            </ul>
+        </ul>
 
-          </div>
-      </nav></div> 
-      <div class="container ">
-      <div class="col-sm-12  d-flex justify-content-center">
-                <section class="row text-center ">
-                  <div class="text-center" >
-        
-        
-            <h1 class="col-sm-12 text-weight-bold text-white">I am Morgan Freeman</h1>
-
-          
-            <h1 class="typing text-white  position-relative text-center"></h1>
-
-          </div></div></div> </div></div></div>
-        </div>
-      </section>
+      </div>
     </div>
+  </nav>
+  <!--header-->
+
+  <header id="home">
+    <div class="container d-flex justify-content-center align-items-center text-center ">
+                <div class="row justify-content-center align-items-center text-center">
+                  <div class="col-md-12"> <h1 class="text-weight-bold text-white">I am Morgan Freeman</h1>
+                  </div>
+<div class="col-md-12">      <h1 class="typing text-white  position-relative text-center"></h1>
+</div>
+
+    </div>
+    </div>
+
   </header>
 
 
-    <!-- about section-->
+  <!-- about section-->
 
   <section id="about" class="py-5 ">
     <div class="container">
@@ -155,7 +150,7 @@
       </div>
   </section>
 
-    <!-- services section-->
+  <!-- services section-->
 
   <section id="services">
     <div class="container  py-5 text-center">
@@ -291,7 +286,7 @@
 
 
 
-      <!-- work section-->
+  <!-- work section-->
   <section id="work">
     <div class="container text-center py-5">
       <h2>PORTFOLIO
@@ -451,11 +446,11 @@
       </div>
     </div>
 
-    </div>
+  
   </section>
 
 
-        <!-- blog section-->
+  <!-- blog section-->
 
   <section id="blog" class="text-center pb-5">
     <h2>Blog</h2>
@@ -547,7 +542,7 @@
 
 
 
-        <!-- contact section-->
+  <!-- contact section-->
 
   <section id="contact" class="py-5 mt-5">
     <div>
@@ -626,11 +621,13 @@
   </section>
 
 
-  <script src="js/script.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src="js/main.js"></script>
+
 
 </body>
 

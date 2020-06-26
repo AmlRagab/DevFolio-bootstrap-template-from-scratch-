@@ -40,26 +40,42 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-   height: 100vh;
-   background-color: rgba(0, 0, 0, 0.418);
-   background-blend-mode: overlay;
-   display: flex;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.418);
+     background-blend-mode: overlay;
+    display: flex;
   
-}
-header section{ 
-      display: flex;
-    align-items: center;
-
 }
 
 .navbar-dark .navbar-nav .nav-link {
-   
+  position: relative;
    font-weight: 500;
+   
    
 
 }
 .navbar-dark .navbar-nav .nav-link:hover{
 color: #fff;
+
+
+
+}
+.navbar-dark .navbar-nav .nav-item:hover ::after{  content: "";
+    
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+    top: 100%;
+    left: 10%;
+    position: absolute;
+animation: border .5s;
+
+    }
+  
+ @keyframes border{
+ 0%{width: 0;
+ }
+ 100%{width: 80%;}
 }
 .navbar-dark .navbar-brand{
     font-size: 1.6rem;
@@ -78,12 +94,13 @@ font-size: 2rem;
     content: "";
     display: inline-block;
     animation: typing-effect 10s steps(40) infinite reverse;
-    border-right: solid 3px white;
    width: 100%;
 }
 
 @keyframes typing-effect{
-0%{content: "CEO DEVELOPER";}
+0%{
+    content: "CEO DEVELOPER";
+}
 25%{content: "WEB DEVELOPER";}
 50%{ content: "WEB DESIGNER";}
 100%{content: "GRAPHIC DESIGNER";}
