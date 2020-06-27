@@ -32,8 +32,17 @@ background-color:  #007bff;
 .shadow-sm{
     box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1) !important;
 }
-
-
+#navbar {
+    background-color: transparent;
+}
+.nav-link{ color: #fff;}
+#btnup {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: #007bff;
+    color: #fff;
+}
 /* header*/
 header {
     background-image: url("../img/intro-bg.jpg");
